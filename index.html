@@ -34,32 +34,70 @@
   }
 
   hr{
+    margin: 40px 0;
+    width: 100%;
+    border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  }
+
+  .line{
     width: 100%;
     border: 0;
     height: 3px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
   }
+
+  .introduction{
+    color: white;
+    font-size: 1.5rem;
+    margin: 5px;
+    text-align: center;
+  }
   .week{
     margin-top: 30px;
     width: 100%;
     padding: 20px;
+    padding-top: 10px;
     /* border: 1px solid black; */
     box-shadow: 2px 2px 2px black;
-    background-color: rgba(255,255,255,0.7);
+    background-color: white;
+    /* background-color: rgba(255,255,255,0.7); */
+  }
+  .week h2:first-child{
+    text-align: center;
+    font-size: 2.5rem;
   }
   .week p{
     font-size: 1.2rem;
+    margin-top: 0px;
   }
   .icons{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-content: center;
+    align-items: center;
 
+  }
+  img{
+    width: 100%;
   }
   .icons img{
     max-width: 250px;
     max-height: 120px;
 
+  }
+
+  h3{
+    font-size: 1.5rem;
+  }
+
+  @media screen and (min-width: 500px){
+    .icons{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
   }
   </style>
 </head>
@@ -68,21 +106,42 @@
     <h1>Alexander Buzachero</h1>
     <h1>Portifolio Page</h1>
   </header>
-  <hr>
+  <hr class="line">
   <main>
     <div class="introduction">
-      <p>In this portifolio I will share my studies in Web and App Development, showing the most used technology and some tips that Have learned in this fantastic journey.</p>
+      <p>In this portifolio I will share my studies in Web and App Development, showing the most used technology and some tips that I Have learned in this fantastic journey.</p>
     </div>
     <div class="week">
       <h2>Jquery.js</h2>
-      <p>My first post will be about Jquery.js, I choose learn this Java Script library because I will use this concept to work in my Project 2 in Langara College.</p>
-      <p>This tool will provide me the resources enought that I need to data visualization, where as a front end developer I will be responsable in represent data in graph.</p>
+      <p>My first post will be about Jquery.js, I choose to learn this JavaScript library because I will use this concept to work in my Project 2 at Langara College.</p>
+      <p>This tool will provide me the resources enough that I need for data visualization, working as a front-end developer I will be responsible in transform data in a graph.</p>
       <h3>Studies Resource:</h3>
       <div class="icons">
         <a href="https://www.youtube.com/watch?v=Ke90Tje7VS0&list=LLTjo0nhNI_9zzFTNQXQo6fQ&index=12&t=4609s"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Logo_of_YouTube_%282015-2017%29.svg/502px-Logo_of_YouTube_%282015-2017%29.svg.png" alt="youtube"></a>
         <a href="https://jquery.com/"><img src="http://www.websnube.com/wp-content/uploads/2016/07/jquery-icon-281x300.png" alt="react"></a>
+
+        <a href="https://www.lynda.com/React-js-tutorials/React-js-Essential-Training/496905-2.html"><img src="https://28vi5c11qlvo3esjm01s1a4x-wpengine.netdna-ssl.com/insidenc/wp-content/uploads/sites/53/2018/07/lynda-dot-com.png" alt="Lynda"></a>
       </div>
-    </div>
-  </main>
-</body>
-</html>
+      <hr>
+      <h2>The birth of React</h2>
+      <p>Back in 2011, Facebook started to face several issues with code maintenance. Also, because of the Facebook Ads app got an increasing number of several features, was necessary more people to keep it running. Not only this, their app became very hard to handle, as they faced a lot of cascading updates.</p>
+
+      <p>To solve it Jordan Walke built a prototype that made the process more efficient, and this marks the birth of React.js.</p>
+
+      <h2>What is React and how works?</h2>
+      <p>It is very simple to understand how efficient is React, React is a declarative and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”.</p>
+      <p>To simplify how use React in your web page, look the image below:</p>
+      <img src="https://coderexample.com/wp-content/uploads/2015/10/react-1024x501.png" alt="react webpage">
+      <p>In this picture representation each box color represents one React component, and React give you the freedom to work in each component in parallel, and every change that you make inside each component will update the webpage automatically and online.</p>
+        <h2>Inside the React component</h2>
+        <p>Inside each component, there is a bit of code that represents a piece of the page, and the way that you call each component is very similar the way that we call a function using Javascript.</p>
+        <p>The picture below shows a React component example that will return a shop list:</p>
+        <img src="component.jpg" alt="react_component2">
+        <h2>Prototype Idea</h2>
+        <p>In my first prototype, I will use the React to create some simple graph using numbers, this prototype will help me to learn how transform numbers in a graph that will be on an important piece in my final project dashboard.</p>
+        <p>Bellow is a simple example of a dashboard that I hope to learn how to build it using React.</p>
+        <img src="dashboard.jpg" alt="Dashboard">
+      </div>
+    </main>
+  </body>
+  </html>
