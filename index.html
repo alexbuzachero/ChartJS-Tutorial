@@ -183,6 +183,45 @@
         <p>To demonstrate my prototype progress I am using the Kanban spreadsheet, through this tool  I can show the items that was accomplished, others itens that I am working and the points to work in the next sprint.</p>
         <img src="https://preview.ibb.co/jE6F8e/kanban.jpg" alt="kanban_Backlog">
 
+        <hr>
+        <h2>Building the Prototype</h2>
+        <p>During the prototype development I could improve my knowledge in React.js, and in this prototype was necessary to install the chart.js library to create the graph and the React Route to swap the pages.</p>
+        <!-- <h3><u>Code to install the Chart.js library </u></h3> -->
+        <p><b>Code to install the Chart.js library:  </b>npm install react-chartjs-2 chart.js –save</p>
+        <!-- <h3><u>Code to install the React Route</u></h3> -->
+        <p><b>Code to install the React Route:  </b>npm i --dev---save react-router-dom</p>
+
+        <h2>Creating the Graph</h2>
+        <p>To create the graph is necessary import the chart.js in the page, using the import command as the picture below.</p>
+        <img src="https://image.ibb.co/c8yCop/01.jpg" alt="Import Chart">
+
+        <p>The graph data was extracted from a JSON file, the first step I imported the JSON file and then I used a for loop to populate the label and data array with those data, bellow you can see importing and extracting the data in my code.</p>
+        <img src="https://preview.ibb.co/bQ9Gg9/02.jpg" alt="Extract Data">
+
+        <p>I used those variables (labels and data2) to call the extract function and to insert the data in the graph, and I create one variable called “dataGraph” with all the information that the chart.js needs to render the graph, and I used this variable (dataGraph) inside the chart data.</p>
+        <img src="https://image.ibb.co/cWzGg9/chartdata.jpg" alt="Chart Data">
+
+        <h2>Using React Router</h2>
+        <p>The Route is essential in React, because React is a single-page application and the way to swap between pages is using the Route command.</p>
+        <p>First, you need to import the BrowserRouter and encapsulate the page div area that will be Router with the  Router property. After that, only use Route in the pages component that you want to swap in the page, as the screenshot below:</p>
+
+        <img src="https://preview.ibb.co/c1xPZU/03.jpg" alt="React Router">
+
+        <h3><u>Calling the page router using React Link</u></h3>
+        <p>After you create the Router as the previews example you need to create the links to call the page component, to do it the first thing is importing the router link and after create the Link passing the path inside as an argument. The best way to understand is observing the picture below:</p>
+        <img src="https://image.ibb.co/n8aYTp/04.jpg" alt="React Link">
+        <hr>
+        <h2>Final Prototype</h2>
+        <p>The previews explanation was overall about the techniques that I used to create my Prototype and if you want to see my prototype in action, click on the link below:</p>
+
+        <a href="https://hidden-cove-83472.herokuapp.com/">Prototype</a>
+
+        <hr>
+        <h2>Project Plan</h2>
+        <p>After all the knowledge acquired working with React.js and Chart, as a front-end developer role I will be in charge to create the Landlord Dashboard, where I will use data sent by the back-end team and render those data as a graph.</p>
+        <p>This new challenge will provide me a new opportunity to improve my React skills, since not only Graph will be rendered in our Dashboard, but also all the tenant profile information that was represented in our first version wireframe, created by our designer Felipe Almeida.</p>
+        <img src="https://preview.ibb.co/jbBJuU/05.jpg" alt="First Dashboard">
+
       </div>
     </main>
   </body>
