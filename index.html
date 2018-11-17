@@ -92,6 +92,12 @@
 
   }
 
+  .center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   h3{
     font-size: 1.2rem;
   }
@@ -271,6 +277,23 @@
        <br><br>
        <p>Bellow is representing my current Kanban Backlog, and for the next sprint I will route the tenant list with the dashboard, and create a function to change automatically the tenant risk score background accordingly with their risk.</p>
        <img src="https://preview.ibb.co/dukhdV/kanban27.jpg" alt="kanban27">
+
+       <hr>
+       <h2>Progress Report (80%)</h2>
+       <p>In this sprint, I finished the tenant react link to pass the ID to the dashboard page and to open the correspondent dashboard tenant, and the another finished task was to change automatically the score background color accordingly with their score.</p>
+       <h3><b>Linking tenant with the dashboard</b></h3>
+       <p>To link the tenant with the dashboard was necessary to use react router link, and inside the link properties I passed the Dashboard path and the tenant ID using "state" as can be identified in the picture below:</p>
+       <img src="https://image.ibb.co/eyUGPf/tenant-Link.jpg" alt="tenant-Link" class="center" style="width: 450px;"><br>
+       <h3><b>Changing tenant background score color</b></h3>
+       <img src="https://preview.ibb.co/jeVyLL/score.jpg" alt="score" class="center" style="width: 700px;"><br>
+       <p>To change the background score color I used a class variable "scoreClasses" to the score div area.</p>
+       <img src="https://image.ibb.co/k1kvH0/divScore.jpg" alt="divScore" class="center" style="width: 350px;"><br>
+       <p>After that, I create a function that depends with the tenant score the function will concat the respectivly class int the "scoreClasses" variable, this function is demonstrated in the picture below:</p>
+       <img src="https://image.ibb.co/fUJt4f/score-Variable.jpg" alt="score-Variable" class="center" style="width: 350px;"><br>
+       <p>The CSS with the respective color is demonstrated in the picture below:</p>
+       <img src="https://image.ibb.co/dEQHVL/score-Variable-CSS.jpg" alt="score-Variable-CSS" class="center" style="width: 350px;"><br>
+       <p>Bellow is representing my current Kanban Backlog with those modifications, and for the next sprint I will work to design the interface following the rental page mockup, and configure the rental page to mobile size. </p>
+       <img src="https://preview.ibb.co/cvFHVL/kanban28.jpg" alt="kanban28">
 
       </div>
     </main>
